@@ -8,13 +8,16 @@
     <title>Shop_clothes</title>
     <link rel="stylesheet" href="./assets/css/font.css">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/font-awesome-4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./assets/css/notify.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="./assets/font-awesome-4.7.0/css/font-awesome.min.css" />
 </head>
 
-<body>
-    <div class="header">
+<!-- onload="showSuccessToast()" -->
 
+<body>
+    <div id="toast"></div>
+    <div class="header">
         <div class="top-bar">
             <div id="container">
                 <div class="content">
@@ -33,15 +36,13 @@
                         <p>Free shipping on international orders of $150+</p>
                     </div>
                     <div class="top-bar-right">
-                        <img src="./images/logo_header/icon-facebook.png" alt=""><a href="#"></a></img>
-                        <img src="./images/logo_header/icon-camera.png" alt=""><a href="#"></a></img>
-                        <img src="./images/logo_header/icon-twitter.png" alt=""><a href="#"></a></img>
-                        <img src="./images/logo_header/icon-balls.png" alt=""><a href="#"></a></img>
-                        <img src="./images/logo_header/icon-water.png" alt=""><a href="#"></a></img>
-
+                        <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-futbol-o" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-envira" aria-hidden="true"></i></a>
                     </div>
                 </div>
-
             </div>
         </div>
 
@@ -57,80 +58,79 @@
                         <div class="sub-menu">
                             <ul class="sub-menu-list">
                                 <li><a href="#">Trang chủ</a></li>
-                                <li><a href="#">Giới thiệu</a></li>
-                                <li><a href="#">Sản phẩm</a>
+                                <li><a href="#" onclick=showErrorToast()>Giới thiệu</a></li>
+                                <li><a href="#" onclick=showErrorToast()>Sản phẩm</a>
                                     <ul class="sub-menu-list-item">
-                                        <li><a href="#">Giỏ hàng</a></li>
-                                        <li><a href="#">CheckOut Details</a></li>
+                                        <li><a href="./form.html">Giỏ hàng</a></li>
+                                        <li><a href="#" onclick=showErrorToast()>CheckOut Details</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="#">Blog</a></li>
-                                <li><a href="#">Liên hệ</a></li>
+                                <li><a href="#" onclick=showErrorToast()>Blog</a></li>
+                                <li><a href="./lienhe.html">Liên hệ</a></li>
                             </ul>
                         </div>
                     </div>
 
                     <div class="cart-search">
-                        <a href="#"><img src="./images/logo_header/ic_search.png" alt="" /></a>
-                        <a href="#"><img src="./images/logo_header/ic_cart.png" alt="" /></a>
+                        <a href="#" onclick=showErrorToast()><i class="icons fa fa-search" aria-hidden="true"></i></a>
+                        <a href="./form.html"><i class="icons fa fa-shopping-cart" aria-hidden="true"></i></a>
                     </div>
                 </div>
             </div>
         </div>
-
-
         <!-- main-menu -->
     </div>
     <!-- header -->
     <section class="slider-img">
-        <div class="banner">
-            <img src="./images/banner/Banner.png" alt="Banner"><a href="#"></a></img>
-        </div>
-        <div class="box">
-            <img class="img-sale" src="./images/logo_header/Logo-clothes_2.png" alt=""><a href="#"></a></img>
+        <div id="container">
+            <div class="content">
+                <div class="box">
+                    <img class="img-sale" src="./images/logo_header/Logo-clothes_2.png" alt=""><a href="#"></a></img>
 
-            <h2 class="text-sale-h2">SALE UP TO</h2>
-            <h1 class="text-sale-h1">40% OFF</h1>
+                    <h2 class="text-sale-h2">SALE UP TO</h2>
+                    <h1 class="text-sale-h1">40% OFF</h1>
 
-            <div class="text-sale-item">
-                <ul class="text-sale-item-list">
-                    <li>
-                        <img src="./images/logo_header/ic_con1.png" alt="">
-                        <a href="#">Chất lượng hàng đầu</a>
-                    </li>
-                    <li>
-                        <img src="./images/logo_header/ic_con2.png" alt="">
-                        <a href="#">Giao hàng nhanh chóng</a>
-                    </li>
-                    <li>
-                        <img src="./images/logo_header/ic_con3.png" alt="">
-                        <a href="#">Đổi trả dễ dàng</a>
-                    </li>
-                </ul>
+                    <div class="text-sale-item">
+                        <ul class="text-sale-item-list">
+                            <li>
+                                <img src="./images/logo_header/ic_con1.png" alt="">
+                                <a href="#">Chất lượng hàng đầu</a>
+                            </li>
+                            <li>
+                                <img src="./images/logo_header/ic_con2.png" alt="">
+                                <a href="#">Giao hàng nhanh chóng</a>
+                            </li>
+                            <li>
+                                <img src="./images/logo_header/ic_con3.png" alt="">
+                                <a href="#">Đổi trả dễ dàng</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="btn">
+                        <a href="https://www.facebook.com/profile.php?id=100043763584099">
+                            <button class="btn-bottom-1">
+                                <p>Mua ngay</p>
+                            </button>
+                        </a>
+
+                        <a href="https://www.facebook.com/profile.php?id=100043763584099">
+                            <button class="btn-bottom-2">
+                                <img src="./images/logo_header/logo_face.png" alt=""><span>Facebook</span></img>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="banner">
+                </div>
             </div>
-
-            <div class="btn">
-                <a href="#">
-                    <button class="btn-bottom-1">
-                        <p>Mua ngay</p>
-                    </button>
-                </a>
-
-                <a href="#">
-                    <button class="btn-bottom-2">
-                        <img src="./images/logo_header/logo_face.png" alt=""><span>Facebook</span></img>
-                    </button>
-                </a>
-
-            </div>
-
         </div>
     </section>
+
     <section class="guarantee">
         <div id="container">
             <div class="content">
                 <div class="guarantee-item">
-                    <img src="./images/logo_header/ic_con2.png" alt="">
+                    <img class="img_1" src="./images/logo_header/ic_con2.png" alt="">
                     <h4>Miễn phí vận chuyển</h4>
                     <p>Miễn phí vận chuyển cho toàn bộ các đơn</p>
                     <p class="bottom">hàng có giá trị gốc trên 500.000 vnđ</p>
@@ -181,7 +181,6 @@
                             <h5>A bug's life t-shirt</h5>
                             <p>$499.00</p>
                         </a>
-
                     </div>
                 </div>
                 <div class="new-product-item">
@@ -323,7 +322,6 @@
                             <h5>Hoodie t-shirt</h5>
                             <p>$499.00</p>
                         </a>
-
                     </div>
                 </div>
                 <div class="new-product-item">
@@ -475,7 +473,6 @@
                                 <h5>Pascal t-shirt</h5>
                                 <p>$499.00</p>
                             </a>
-
                         </div>
                     </div>
                     <div class="new-product-item">
@@ -502,7 +499,6 @@
                                 <h5>Typescript t-shirt</h5>
                                 <p>$499.00</p>
                             </a>
-
                         </div>
                     </div>
                     <div class="new-product-item">
@@ -529,7 +525,6 @@
                                 <h5>Pascal t-shirt</h5>
                                 <p>$499.00</p>
                             </a>
-
                         </div>
                     </div>
                     <div class="new-product-item">
@@ -573,11 +568,10 @@
                     <ul>
                         <li>Completely beautiful website and</li>
                         <li>amazing support! This is my second</li>
-                        <li>website from this author and I love both</li>
+                        <li>website from this author and I love</li>
                         <li>of the sites so much and she has</li>
                         <li>helped me so well when I needed it!</li>
                     </ul>
-
                     <a href="#"><img src="./images/customer-reviews/img_1.png" alt="img"></a>
                     <h4>Yvonne Knight</h4>
                     <p>Developer</p>
@@ -586,7 +580,7 @@
                     <ul>
                         <li>Completely beautiful website and</li>
                         <li>amazing support! This is my second</li>
-                        <li>website from this author and I love both</li>
+                        <li>website from this author and I love</li>
                         <li>of the sites so much and she has</li>
                         <li>helped me so well when I needed it!</li>
                     </ul>
@@ -599,11 +593,10 @@
                     <ul>
                         <li>Completely beautiful website and</li>
                         <li>amazing support! This is my second</li>
-                        <li>website from this author and I love both</li>
+                        <li>website from this author and I love</li>
                         <li>of the sites so much and she has</li>
                         <li>helped me so well when I needed it!</li>
                     </ul>
-
                     <a href="#"><img src="./images/customer-reviews/img_3.png" alt="img"></a>
                     <h4>Zeng Wen</h4>
                     <p>Designer</p>
@@ -703,16 +696,17 @@
                     <h1>Đăng ký nhận khuyến mãi</h1>
                     <span>Đăng ký bằng địa chỉ email của bạn để nhận thông tin cập nhật.</span>
                 </div>
-
                 <div class="register-btn">
                     <form class="example" action="/action_page.php">
-                        <input type="text" placeholder="Địa chỉ email của bạn..." name="search">
+                        <div class="register-email">
+                            <div class="icon-btn">
+                                <img src="./images/register/icon_1.png" alt="icon">
+                            </div>
+                            <input type="text" placeholder="Địa chỉ email của bạn..." name="search">
+                        </div>
                         <button type="button" onclick="alert('Hello world!')">Đăng kí</button>
                     </form>
 
-                    <div class="icon-btn">
-                        <img src="./images/register/icon_1.png" alt="icon">
-                    </div>
                 </div>
             </div>
         </div>
@@ -726,23 +720,24 @@
                     <ul class="list-address">
                         <li class="item-address">
                             <a href="#" class="item-content">
-                                <img src="./images/address/Union.png" alt="img">
+                                <a href="#"><i class="icons fa fa-map-marker" aria-hidden="true"></i></a>
                                 <span>Keangnam 72, Phạm Hùng, Mễ Trì, Hà Nội</span>
                             </a>
                         </li>
                         <li class="item-address">
                             <a href="#" class="item-content">
-                                <img src="./images/address/ic_phone-volume.png" alt="img">
+                                <a href="#"><i class="icons fa fa-volume-control-phone" aria-hidden="true"></i></a>
                                 <span>0898 399 333</span>
                             </a>
                         </li>
                         <li class="item-address">
                             <a href="#" class="item-content">
-                                <img src="./images/address/ic_email.png" alt="img">
+                                <a href="#"><i class="icons fa fa-envelope" aria-hidden="true"></i></a>
                                 <span>aophongit.com</span>
                             </a>
                         </li>
                     </ul>
+                    <img src="./images/logo_header/image_1.png" alt="LOGO">
                 </div>
                 <div class="content-list-2">
                     <h4>Pages</h4>
@@ -762,7 +757,6 @@
                             <li><a href="#">Guide size</a></li>
                         </ul>
                     </div>
-
                 </div>
                 <div class="content-list">
                     <div class="content-list-items-1">
@@ -780,7 +774,6 @@
                                 frameborder="0" allowfullscreen="true"
                                 allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
                         </div>
-
                         <div class="phone">
                             <a class="phone-call" href="#">
                                 <i class="fa fa-volume-control-phone" aria-hidden="true"></i>
@@ -802,12 +795,12 @@
     </footer>
     <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
     <script>
-        $(document).ready(function(){
+        $(document).ready(function () {
             //Tìm tất cả ul có sub-menu-list-item và thêm vào cha của nó là 'li' class hass-child
             $('.sub-menu-list-item').parent('li').addClass('has-child');
+            showSuccessToast();
         });
-
     </script>
+    <script src="./js/notifi.js"></script>
 </body>
-
 </html>

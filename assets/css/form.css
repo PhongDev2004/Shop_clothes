@@ -1,0 +1,153 @@
+.container {
+    padding: 0px 15px;
+    margin: auto;
+    width: 1170px;
+}
+
+.wrapper {
+    max-width: 600px;
+    color: #fff;
+    margin-top: 150px;
+    padding: 35px;
+}
+
+.content-main {
+    height: 1085px;
+}
+
+.content-main .content {
+    display: flex;
+}
+
+.content-main .content .wrapper {
+    flex-basis: 50%;
+}
+
+.content-main .content .box {
+    flex-basis: 50%;
+}
+
+.content-main .banner {
+    background-image: url('../../images/banner/bg_header.png');
+    height: 1035px;
+    width: 100%;
+    position: absolute;
+}
+
+.content-main .content .wrapper {
+    border: none;
+    outline: none;
+    background: rgb(63, 94, 251);
+    background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+
+.content-main .content .wrapper h1 {
+    text-align: center;
+    margin-bottom: 50px;
+    text-shadow: red 2px 5px;
+    font-family: Montserrat-h1;
+}
+
+.content-main .content .wrapper .text {
+    font-size: 40px;
+    font-weight: bold;
+    color: #0088cc;
+    position: relative;
+    animation: color 5s infinite;
+    animation: animate-text 2s ease-in-out infinite;
+}
+
+@keyframes animate-text {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+@keyframes color {
+    0%{color:  orange}
+    10%{color: purple}
+    20%{color: red}
+    30%{color: cadetblue}
+    40%{color: yellow}
+    50%{color: coral}
+    60%{color: green}
+    70%{color: cyan}
+    80%{color: deeppink}
+    90%{color: dodgerblue}
+    100%{color:olivedrab}
+}
+
+.content-main .content .wrapper form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.content-main .content .wrapper label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-family: Montserrat;
+}
+
+.content-main .content .wrapper label:hover {
+    font-size: 18px;
+    color: yellow;
+}
+
+.content-main .content .wrapper input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    font-family: Montserrat;
+    outline: none;
+}
+
+.content-main .content .wrapper select {
+    height: 40px;
+}
+
+.content-main .content .wrapper .buttons {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.content-main .content .wrapper button[type="reset"],
+button[type="submit"] {
+    padding: 10px 20px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-family: Montserrat;
+}
+
+.content-main .content .wrapper button[type="reset"]:hover,
+button[type="submit"]:hover {
+    background-color: #333;
+}

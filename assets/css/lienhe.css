@@ -1,0 +1,181 @@
+.container {
+    padding: 0px 15px;
+    margin: auto;
+    max-width: 1170px;
+}
+
+.address {
+    height: auto;
+}
+
+.address .title {
+    height: 212px;
+    background-color: #ccc;
+    padding-top: 70px;
+}
+
+.address .title h1 {
+    padding-bottom: 18px;
+}
+
+.address .title p {
+    display: inline-block;
+    padding-right: 16px;
+}
+
+.address .title p:hover:last-child {
+    color: blue;
+    font-weight: bold;
+}
+
+.address .title p:last-child {
+    padding-left: 16px;
+}
+
+.address .address-content_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 25px;
+    text-align: center;
+}
+
+.address .address-content_1 ul {
+    height: 195px;
+    border: 1px solid #ccc;
+    margin-top: 50px;
+    padding-top: 45px;
+}
+
+.address .address-content_1 ul .icons {
+    font-size: 24px;
+    padding-bottom: 25px;
+    color: green;
+}
+
+.address .address-content_1 ul .icons:hover {
+    font-size: 25px;
+    color: blue;
+}
+
+.address .address-content_1 li {
+    padding-top: 5px;
+}
+
+.address .address-content_1 li a:hover {
+    font-weight: bold;
+    color: blue;
+}
+
+.address .address-content_2 {
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.address .address-content_2 .iframe {
+    width: 50%;
+    border-radius: 10px;
+}
+
+.address .address-content_2 .iframe iframe {
+    border-radius: 10px;
+    width: 550px;
+}
+
+.address .address-content_2 .form-address {
+    width: 50%;
+    padding-left: 18px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: rgb(2, 0, 36);
+    background: radial-gradient(circle, rgba(2, 0, 36, 1) 51%, rgba(0, 212, 255, 1) 100%, rgba(121, 9, 9, 1) 100%);
+}
+
+.address .address-content_2 .form-address h1 {
+    text-align: center;
+    color: wheat;
+    text-shadow: #FC0 1px 0 13px;
+    font-size: 40px;
+    font-family: Montserrat-h1;
+    padding-top: 25px;
+    padding-bottom: 40px;
+    animation: color 5s infinite;
+}
+
+@keyframes color {
+    0%{color:  rgb(251, 194, 88)}
+    10%{color: rgb(236, 139, 236)}
+    20%{color: rgb(234, 103, 103)}
+    30%{color: rgb(23, 237, 245)}
+    40%{color: rgb(229, 229, 59)}
+    50%{color: rgb(221, 115, 77)}
+    60%{color: rgb(23, 239, 23)}
+    70%{color: rgb(28, 238, 238)}
+    80%{color: rgb(213, 71, 147)}
+    90%{color: rgb(70, 147, 225)}
+    100%{color:rgb(166, 230, 38)}
+}
+
+.address .address-content_2 .form-address input {
+    width: 95%;
+    height: 30px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #00ccff;
+    font-size: 16px;
+    padding-left: 10px;
+    color: #00ccff;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+::placeholder {
+    color: #00ccff;
+    font-size: 14px;
+}
+
+.address .address-content_2 .form-address textarea {
+    width: 95%;
+    height: 100px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 1px solid #00ccff;
+    font-size: 16px;
+    padding-left: 10px;
+    color: #00ccff;
+    cursor: cell;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.address .address-content_2 .form-address button {
+    width: 160px;
+    height: 44px;
+    margin-bottom: 20px;
+    margin-left: 170px;
+}
+
+.address .address-content_2 .form-address .face a {
+    color: turquoise;
+    opacity: 0.7;
+}
+
+.address .address-content_2 .form-address .face a:hover {
+    opacity: 1;
+}
+
+.address .address-content_2 .form-address .face .icons {
+    color: blue;
+    opacity: 0.8;
+}
+
+.address .address-content_2 .form-address .face .icons:hover {
+    opacity: 1;
+}
+
+.footer .content {
+    padding-top: 60px;
+}

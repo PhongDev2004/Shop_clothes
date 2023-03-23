@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/font.css">
+    <link rel="stylesheet" href="./assets/css/form.css">
+    <link rel="stylesheet" href="./assets/css/notify.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="./assets/font-awesome-4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+    <div id="toast"></div>
+    <div class="header">
+        <div class="top-bar">
+            <div id="container">
+                <div class="content">
+                    <div class="top-bar-left">
+                        <div class="icons-phone">
+                            <img src="./images/logo_header/ic_phone-volume.png" alt="">
+                        </div>
+                        <div class="text-phone">
+                            <ul class="text-phone-item">
+                                <li class="text-phone-1"><a href="#"></a>Call for support:</li>
+                                <li class="text-phone-2"><a href="#">1900 198 8198</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="top-bar-center">
+                        <p>Free shipping on international orders of $150+</p>
+                    </div>
+                    <div class="top-bar-right">
+                        <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-futbol-o" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-envira" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-menu">
+            <div id="container">
+                <div class="main-menu-content">
+                    <div class="logo-menu-wrapper">
+                        <div class="logo_header">
+                            <a href="#">
+                                <img src="./images/logo_header/Logo_clothers.png" alt="logo">
+                            </a>
+                        </div>
+                        <div class="sub-menu">
+                            <ul class="sub-menu-list">
+                                <li><a href="./index.html">Trang chủ</a></li>
+                                <li><a href="#" onclick=showErrorToast()>Giới thiệu</a></li>
+                                <li><a href="#" onclick=showErrorToast()>Sản phẩm</a>
+                                    <ul class="sub-menu-list-item">
+                                        <li><a href="./form.html">Giỏ hàng</a></li>
+                                        <li><a href="#" onclick=showErrorToast()>CheckOut Details</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#" onclick=showErrorToast()>Blog</a></li>
+                                <li><a href="./lienhe.html">Liên hệ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="cart-search">
+                        <a href="#" onclick=showErrorToast()><i class="icons fa fa-search" aria-hidden="true"></i></a>
+                        <a href="./form.html"><i class="icons fa fa-shopping-cart" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-main">
+        <div class="banner">
+            <div class="container">
+                <div class="content">
+                    <div class="wrapper">
+                        <div class="form-order">
+                            <h1 class="text">Giỏ hàng</h1>
+                            <form id="order-form">
+                                <label for="full-name">Họ và tên</label>
+                                <input type="text" id="full-name" name="full-name" required>
+                                <label for="id-card">CCCD</label>
+                                <input type="text" id="id-card" name="id-card" required>
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                                <label for="gender">Giới tính</label>
+                                <select id="gender" name="gender">
+                                    <option value="male">Nam</option>
+                                    <option value="female">Nữ</option>
+                                    <option value="other">Khác</option>
+                                </select>
+                                <label for="phone-number">Số điện thoại</label>
+                                <input type="tel" id="phone-number" name="phone-number" required>
+                                <label for="shirt">Chọn áo</label>
+                                <select id="shirt" name="flight">
+                                    <option value="shirt1">Áo phông IT</option>
+                                    <option value="shirt2">Áp phông JS</option>
+                                    <option value="shirt3">Áo phông PHP</option>
+                                </select>
+                                <label for="birthdate">Ngày sinh</label>
+                                <input type="date" id="birthdate" name="birthdate" required>
+                                <label for="size">Size</label>
+                                <select id="size" name="luggage">
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                </select>
+                                <label for="payment-method">Hình thức thanh toán</label>
+                                <select id="payment-method" name="payment-method">
+                                    <option value="credit-card">Thẻ tín dụng</option>
+                                    <option value="debit-card">Thẻ ghi nợ</option>
+                                    <option value="cash">Tiền mặt</option>
+                                    <option value="paypal">Paypal</option>
+                                </select>
+                                <div class="buttons">
+                                    <button type="reset">Reset</button>
+                                    <button type="submit">Mua ngay</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="box"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div id="container">
+            <div class="content">
+                <div class="content-list-1">
+                    <h4>LOGO</h4>
+                    <ul class="list-address">
+                        <li class="item-address">
+                            <a href="#" class="item-content">
+                                <a href="#"><i class="icons fa fa-map-marker" aria-hidden="true"></i></a>
+                                <span>Keangnam 72, Phạm Hùng, Mễ Trì, Hà Nội</span>
+                            </a>
+                        </li>
+                        <li class="item-address">
+                            <a href="#" class="item-content">
+                                <a href="#"><i class="icons fa fa-volume-control-phone" aria-hidden="true"></i></a>
+                                <span>0898 399 333</span>
+                            </a>
+                        </li>
+                        <li class="item-address">
+                            <a href="#" class="item-content">
+                                <a href="#"><i class="icons fa fa-envelope" aria-hidden="true"></i></a>
+                                <span>aophongit.com</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <img src="./images/logo_header/image_1.png" alt="LOGO">
+                </div>
+                <div class="content-list-2">
+                    <h4>Pages</h4>
+                    <ul>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="content-list">
+                    <div class="content-list-items">
+                        <h4>Policy</h4>
+                        <ul>
+                            <li><a href="#">Return policy</a></li>
+                            <li><a href="#">Ordering guide</a></li>
+                            <li><a href="#">Shipping & Forwarding</a></li>
+                            <li><a href="#">Guide size</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="content-list">
+                    <div class="content-list-items-1">
+                        <h4>Follow Aophongit</h4>
+
+                        <div class="fb-root">
+                            <script async defer crossorigin="anonymous"
+                                src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v16.0" nonce="ocTdMRPg">
+                                </script>
+                        </div>
+                        <div class="fb-pane">
+                            <iframe
+                                src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fleomessi&tabs=timeline&width=230px&height=70&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                                width="230px" height="70" style="border:none;overflow:hidden" scrolling="no"
+                                frameborder="0" allowfullscreen="true"
+                                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                        </div>
+
+                        <div class="phone">
+                            <a class="phone-call" href="#">
+                                <i class="fa fa-volume-control-phone" aria-hidden="true"></i>
+                                <div class="text">
+                                    <p>Call us </p>
+                                    <p>1900 198 8198</p>
+                                </div>
+                            </a>
+                            <a class="messenger" href="#"><img src="./images/address/ic_messges.png" alt="img"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <h4>Copyright © 2020 Aophongit.com</h4>
+            </div>
+        </div>
+        </div>
+    </footer>
+    <!-- Script -->
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <script>
+        $(document).ready(function () {
+            //Tìm tất cả ul có sub-menu-list-item và thêm vào cha của nó là 'li' class hass-child
+            $('.sub-menu-list-item').parent('li').addClass('has-child');
+            showSuccessToast();
+        });
+    </script>
+    <script src="./js/form.js"></script>
+    <script src="./js/notifi.js"></script>
+</body>
+
+</html>
