@@ -147,7 +147,7 @@ a {
     width: 0px;
     background: #42BA7C;
     position: absolute;
-    bottom: 0;
+    bottom: 20px;
     left: 0;
     transition: 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
@@ -168,8 +168,16 @@ a {
     z-index: 1000;
 }
 
+.header .logo-menu-wrapper .sub-menu .sub-menu-list>li:hover.has-child::after {
+    color: #42BA7C;
+}
+
 .header .logo-menu-wrapper .sub-menu .sub-menu-list li:hover .sub-menu-list-item {
     display: block;
+}
+
+.header .logo-menu-wrapper .sub-menu .sub-menu-list li:hover a {
+    color: #42BA7C;
 }
 
 .header .logo-menu-wrapper .sub-menu .sub-menu-list ul.sub-menu-list-item {
