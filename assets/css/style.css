@@ -35,7 +35,6 @@ a {
     text-decoration: none;
 }
 
-
 .header .top-bar {
     background: #42BA7C;
 }
@@ -218,7 +217,7 @@ a {
 .slider-img .box {
     position: absolute;
     top: 245px;
-    left: 120px;
+    left: 195px;
     padding-bottom: 10px;
 }
 
@@ -447,7 +446,7 @@ h4 {
 
 .new-product-item-img .icon-product button {
     color: #ffffff;
-    width: 204px;
+    width: 92%;
     height: 44px;
     background: #42BA7C;
     border: none;
@@ -808,7 +807,7 @@ h4 {
 .register .content .icon-btn {
     position: absolute;
     top: 15px;
-    left: 210px;
+    left: 260px;
 }
 
 .footer .content {
