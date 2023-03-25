@@ -4,12 +4,12 @@ function toast({ title = "", message = "", type = "info", duration = 3000 }) {
   if (main) {
     const toast = document.createElement("div");
 
-    // Auto remove roast
+    // Tự động xóa toast
     const autoRemoveID = setTimeout(function () {
       main.removeChild(toast);
     }, duration + 1000);
 
-    //remove toast when clicked
+    //Xóa toast khi nhấp vào
     toast.onclick = function (e) {
       if (e.target.closest(".toast__close")) {
         main.removeChild(toast);

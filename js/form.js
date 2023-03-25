@@ -14,7 +14,7 @@ loginForm.addEventListener('submit', function(e) {
     const size = document.getElementById('size').value;
     const paymentMethod = document.getElementById('payment-method').value;
 
-    // Làm điều gì đó với các giá trị biểu mẫu (ví dụ: gửi dữ liệu đến máy chủ)
+    //-------- gửi dữ liệu đến máy chủ-------
     console.log(fullName, idCard, email, gender, phoneNumber, shirt, birthdate, size, paymentMethod);
 
     // Reset form
