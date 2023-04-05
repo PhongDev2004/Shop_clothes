@@ -212,6 +212,10 @@ a {
     color: blue;
 }
 
+.header .main-menu-content .navbar-toggler {
+    display: none;
+}
+
 .slider-img {
     background-image: url(../../images/banner/Banner.png);
     height: 800px;

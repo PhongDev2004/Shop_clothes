@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /* background: linear-gradient(#e66465, #9198e5); */
+    background-image: url(../../images/banner/background.jpg);
+}
+
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    vertical-align: middle;
+    height: 550px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 900px;
+    position: relative;
+    margin: auto;
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Dấu chấm */
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    background-color: pink;
+}
+
+.active {
+    background-color: #717171;
+}
+
+/* animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* Trên màn hình nhỏ giảm kích thước text */
+@media only screen and (max-width: 300px) {
+    .text {
+        font-size: 11px
+    }
+}
+
+.row_1 {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title_my_user1 {
+    position: absolute;
+    bottom: 250px;
+    left: 20px;
+    text-align: center;
+} 
+
+.title_my_user2 {
+    position: absolute;
+    bottom: 250px;
+    right: 25px;
+    text-align: center;
+} 
+
+.title_my_user1 h1 {
+    font-size: 50px;
+    line-height: 90px;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    background: url(../../images/banner/back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+}
+
+.title_my_user1 p {
+    font-weight: 600;
+}
+
+.title_my_user2 h1 {
+    font-size: 50px;
+    line-height: 90px;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    background: url(../../images/banner/back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+}
+
+.title_my_user2 p {
+    font-weight: 600;
+}
+
+@keyframes back {
+    100% {
+        background-position: 2000px 0;
+    }
+}

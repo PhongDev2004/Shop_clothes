@@ -46,7 +46,7 @@ function showSuccessToast() {
     title: "LƯƠNG BÁ PHONG",
     message: "CHÀO MỪNG BẠN ĐẾN VỚI CỦA HÀNG QUẦN ÁO IT",
     type: "success",
-    duration: 3000,
+    duration: 1500,
   });
 }
 
@@ -55,6 +55,6 @@ function showErrorToast() {
   title: 'LƯƠNG BÁ PHONG',
   message: 'HIỆN TẠI CHỨC NĂNG VẪN CHƯA ĐƯỢC UPDATE !',
   type: 'error',
-  duration: 3000,
+  duration: 1500,
 });
 }
