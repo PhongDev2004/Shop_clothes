@@ -64,28 +64,62 @@
 
 @keyframes animate-text {
     0% {
-      transform: translateY(0);
+        transform: translateY(0);
     }
+
     50% {
-      transform: translateY(-20px);
+        transform: translateY(-20px);
     }
+
     100% {
-      transform: translateY(0);
+        transform: translateY(0);
     }
-  }
+}
 
 @keyframes color {
-    0%{color:  orange}
-    10%{color: purple}
-    20%{color: red}
-    30%{color: cadetblue}
-    40%{color: yellow}
-    50%{color: coral}
-    60%{color: green}
-    70%{color: cyan}
-    80%{color: deeppink}
-    90%{color: dodgerblue}
-    100%{color:olivedrab}
+    0% {
+        color: orange
+    }
+
+    10% {
+        color: purple
+    }
+
+    20% {
+        color: red
+    }
+
+    30% {
+        color: cadetblue
+    }
+
+    40% {
+        color: yellow
+    }
+
+    50% {
+        color: coral
+    }
+
+    60% {
+        color: green
+    }
+
+    70% {
+        color: cyan
+    }
+
+    80% {
+        color: deeppink
+    }
+
+    90% {
+        color: dodgerblue
+    }
+
+    100% {
+        color: olivedrab
+    }
 }
 
 .content-main .content .wrapper form {

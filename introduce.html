@@ -88,64 +88,82 @@
         <!-- main-menu -->
     </div>
 
-    <div class="slideshow-container">
-        <div class="mySlides fade">
-            <div class="numbertext">1 / 3</div>
-            <img src="./images/banner/chó.jpg" style="width:100%">
-            <div class="text">Picture_1</div>
-        </div>
-
-        <div class="mySlides fade">
-            <div class="numbertext">2 / 3</div>
-            <img src="./images/banner/gà 3.png" style="width:100%">
-            <div class="text">Picture_2</div>
-        </div>
-
-        <div class="mySlides fade">
-            <div class="numbertext">3 / 3</div>
-            <img src="./images/banner/mèo.jpg" style="width:100%">
-            <div class="text">Picture_3</div>
-        </div>
-    </div>
-    <br>
-    <div class="page_list">
-        <div style="text-align:center">
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-        </div>
-        <div class="row_1">
-            <div class="title_my_user1">
-                <h1>PHONGBL</h1>
-                <p>I learning web developer <br> at FPT Polytechnic</p>
+    <div class="slider-container">
+        <div class="slider">
+            <div class="mySlider">
+                <div class="sliderText">
+                    1/3
+                </div>
+                <img src="./images/banner/city1.jpg" alt="Images">
             </div>
-            <div class="title_my_user2">
-                <h1>PHONGBL</h1>
-                <p>I learning web developer <br> at FPT Polytechnic</p>
+            <div class="mySlider">
+                <div class="sliderText">
+                    2/3
+                </div>
+                <img src="./images/banner/city3.jpg" alt="Images">
             </div>
+            <div class="mySlider">
+                <div class="sliderText">
+                    3/3
+                </div>
+                <img src="./images/banner/ảnh 11.jpg" alt="Images">
+            </div>
+            <h1 class="h1_1">PHONGLB</h1>
+            <h1 class="h1_2">PHONGLB</h1>
         </div>
-
+        <button onclick="indexImg(-1)">Previous</button>
+        <button onclick="indexImg(1)">Next</button>
+        <button onclick="autoSlider()">Auto</button>
+        <button onclick="stopAuto()">Stop auto</button>
     </div>
-
 
     <script>
-        let slideIndex = 0;
-        showSlides();
-        function showSlides() {
-            let i;
-            let slides = document.getElementsByClassName("mySlides");
-            let dots = document.getElementsByClassName("dot");
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
+        let index = 0;
+        function indexImg(n) {
+            showSlider(index += n);
+        }
+
+        function showSlider() {
+            // Truy cập vào vị trí ảnh
+            let img = document.getElementsByClassName('mySlider');
+            //Điều kiện
+            if (index >= img.length) {
+                index = 0;
             }
-            slideIndex++;
-            if (slideIndex > slides.length) { slideIndex = 1 }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
+            if (index < 0) {
+                index = img.length - 1;
             }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-            setTimeout(showSlides, 2000); // Thay đổi slider sau 2s
+            //Chuyển về trạng thái ẩn
+            for (let i = 0; i < img.length; i++) {
+                img[i].style.display = 'none'
+            }
+            img[index].style.display = 'block';
+            index;
+        }
+        // Gửi luôn ở ảnh đầu tiên hiển thị lên
+        showSlider();
+        let autoImg;
+        function autoSlider() {
+            // Truy cập vào vị trí ảnh
+            let img = document.getElementsByClassName('mySlider');
+            //Điều kiện
+            if (index >= img.length) {
+                index = 0;
+            }
+            if (index < 0) {
+                index = img.length - 1;
+            }
+            //Chuyển về trạng thái ẩn
+            for (let i = 0; i < img.length; i++) {
+                img[i].style.display = 'none'
+            }
+            img[index].style.display = 'block';
+            index++;
+            autoImg = setTimeout(autoSlider, 2000)
+        }
+
+        function stopAuto() {
+            clearInterval(autoImg);
         }
     </script>
 

@@ -98,8 +98,6 @@
     text-shadow: #FC0 1px 0 13px;
     font-size: 40px;
     font-family: Montserrat-h1;
-    padding-top: 25px;
-    padding-bottom: 40px;
     animation: color 5s infinite;
 }
 
@@ -117,65 +115,55 @@
     100%{color:rgb(166, 230, 38)}
 }
 
-.address .address-content_2 .form-address input {
-    width: 95%;
-    height: 30px;
-    background: transparent;
-    border: none;
-    outline: none;
-    border-bottom: 1px solid #00ccff;
-    font-size: 16px;
-    padding-left: 10px;
-    color: #00ccff;
-    cursor: pointer;
-    margin-bottom: 20px;
+.form-address #order-form label{
+    padding-right: 7px;
+    font-weight: 500;
+    font-family: Montserrat;
+    color: #ffffff;
 }
 
-::placeholder {
-    color: #00ccff;
-    font-size: 14px;
+.form-address #order-form .note {
+    padding-right: 17px;
+    padding-bottom: 10px;
+    color: yellow;
 }
 
-.address .address-content_2 .form-address textarea {
-    width: 95%;
-    height: 100px;
-    background: transparent;
-    border: none;
+.form-address #order-form label, input {
+    margin: 14px 0;
+}
+
+.form-address #order-form input {
     outline: none;
-    border: 1px solid #00ccff;
-    font-size: 16px;
-    padding-left: 10px;
-    color: #00ccff;
-    cursor: cell;
+    border: none;
+    padding: 7px;
+    border-radius: 5px;
+    background-color: aqua;
+}
+
+.form-address #order-form textarea {
+    outline: none;
+    border: none;
+    border-radius: 5px;
     margin-top: 15px;
-    margin-bottom: 15px;
+    padding-left: 5px;
+    background-color: rgb(246, 210, 66);
 }
 
-.address .address-content_2 .form-address button {
-    width: 160px;
-    height: 44px;
-    margin-bottom: 20px;
-    margin-left: 170px;
+.form-address #order-form button {
+    padding: 7px 15px;
+    color: darkcyan;
+    background-color: aqua;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    float: right;
+    margin: 20px 20px 0 0;
 }
 
-.address .address-content_2 .form-address .face a {
-    color: turquoise;
-    opacity: 0.7;
-}
-
-.address .address-content_2 .form-address .face a:hover {
-    opacity: 1;
-}
-
-.address .address-content_2 .form-address .face .icons {
-    color: blue;
-    opacity: 0.8;
-}
-
-.address .address-content_2 .form-address .face .icons:hover {
-    opacity: 1;
+.form-address #order-form button:hover {
+    background-color: rgb(34, 234, 34);
 }
 
 .footer .content {
-    padding-top: 60px;
+    padding-top: 40px;
 }
